@@ -16,3 +16,4 @@ DATABASE = {
     "password": os.environ["POSTGRES_PASS"],
     "database": os.environ["POSTGRES_DB"],
 }
+LOG_LEVEL = "INFO"

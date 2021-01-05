@@ -28,5 +28,5 @@ class ZeldaItemsSpider(Spider):
         price_sel = "//tr[th//text()[contains(., 'Cost(s)')]]/td/div/text()"
         name = response.css(name_sel).get()
         price = response.xpath(price_sel).get()
-        if isinstance(price, int):
+        if price and price.strip().isdigit():
             yield {"name": name, "price": int(price)}

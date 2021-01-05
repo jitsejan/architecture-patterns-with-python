@@ -7,6 +7,8 @@ name = "pypi"
 scrapy = "*"
 sqlalchemy = "*"
 psycopg2 = "*"
+black = "*"
+pylint = "*"
 
 [dev-packages]
 
