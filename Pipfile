@@ -9,6 +9,10 @@ sqlalchemy = "*"
 psycopg2 = "*"
 black = "*"
 pylint = "*"
+flask = "*"
+flask-sqlalchemy = "*"
+flask-migrate = "*"
+python-dotenv = "*"
 
 [dev-packages]
 
