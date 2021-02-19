@@ -1,2 +1,2 @@
 # architecture-patterns-with-python
-Code based on the Architecture Patterns with Python book
+Code based on the Architecture Patterns with Python book.
