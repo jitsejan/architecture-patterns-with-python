@@ -13,6 +13,8 @@ flask = "*"
 flask-sqlalchemy = "*"
 flask-migrate = "*"
 python-dotenv = "*"
+fastapi = "*"
+uvicorn = "*"
 
 [dev-packages]
 
