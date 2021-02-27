@@ -1,6 +1,13 @@
-from sqlalchemy import Column, Integer, String
-from typing import Dict
+from typing import TypedDict
+
+from sqlalchemy import Column, Integer, String  # type: ignore
+
 from .database import Base
+
+
+class ItemDict(TypedDict):
+    name: str
+    price: int
 
 
 class Item(Base):
@@ -21,7 +28,7 @@ class Item(Base):
         return f"<Item {self.name}>"
 
     @property
-    def serialize(self) -> Dict[str, int]:
+    def serialize(self) -> ItemDict:
         """
         Return item in serializeable format
         """
